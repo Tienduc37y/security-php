@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment Form</title>
+</head>
+<body>
+    <form action="save_comment.php" method="post">
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+    <!-- <script>
+        setInterval(()=>{alert("XSS")},100)
+    </script> -->
+    <!-- This is a test comment with many special characters: <b>bold</b>, <i>italic</i>, 'single quotes', \"double quotes\", <script>alert('XSS');</script>, &amp;, &lt;, &gt;, ©, ®, ™, 你好, Привет, 😀 -->
+</html>
